@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bree+Serif&family=Caveat+Brush&family=Kanit:ital,wght@1,200&family=Kaushan+Script&family=Prompt:wght@300&family=Raleway:wght@500&family=Roboto+Mono:wght@200&family=Seymour+One&family=Ubuntu:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#firstPart{
+    width: 100%;
+    /* height: 100vh; */
+    overflow-x: hidden;
+}
+
+#navbar{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+#first{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#first li, #second li{
+    list-style: none;
+    margin: 5px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+#first img{
+    height: 50px;
+    width: 30px;
+    filter: invert(1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#first #sitename{
+    margin-left: -2px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#second{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-top: -77px;
+}
+
+#second li{
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+#second li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+#second .mod:hover, i:hover{
+    
+    
+    cursor: pointer;
+} 
+
+#second li:hover{
+    border-bottom: 3px solid rgb(2, 186, 250);
+}
+
+#drop:hover{
+    
+    cursor: pointer;
+}
+
+
+#second .dropdown1{
+    display: inline-block;
+}
+
+.content1{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    margin-left: 20px;
+    width: 175px;
+    border: 2px solid white;
+}
+
+.content1 a{
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    font-size: 17px;
+}
+
+.dropdown1:hover .content1{
+    display: block;
+}
+
+.content1 a:hover{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-weight: bold;
+}
+
+.login{
+    text-align: right; 
+    padding-right: 10px;
+}
+
+.login a:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.query{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    /* margin: auto; */
+    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+    justify-content: space-around;
+    padding-right: 100px;
+}
+
+#ques{
+    padding: 10px;
+    padding-left: 0;
+    font-size: 2rem;
+}
+
+.inner{
+    width: 56%;
+}
+
+.special input{
+    width: 800px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* .image{
+    height: 200px;
+    width: 200px;
+} */
+
+/* .image img:hover{
+    transition: all 0.5s ease-in-out;
+} */
+
+.tr{
+    transform: scale(1.5);
+    transition: all 1s ease-in-out;
+}
+
+.btn1{
+    float: right;
+    /* margin-left: 7px; */
+}
+
+.btn1:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: black;
+}
+
+#image{
+    margin-top: 80px;
+
+}
+
+
+.details{
+    font-family: 'Prompt', sans-serif;
+    background-color: rgba(229, 227, 225, 0.5);
+    margin-top: 20px;
+    padding: 25px 0;
+    padding-left: 80px;
+}
+
+.details ul{
+    margin-bottom: 0;
+}
+
+
+.details ul li{
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.details ul li i{
+    margin-right: 10px;
+}
+
+#fifthPart{
+    height: 60px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    padding: 0 15px;
+    padding-bottom: 0;
+    /* background-color: rgb(248, 239, 239); */
+    /* overflow-x: hidden; */
+}
+
+#fifthPart p{
+   padding: 18px;
+   padding-bottom: 0; 
+    color: white;
+    margin-bottom: 0;
+    /* float: left; */
+}
+
+#apps{
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+    /* padding-right: 18px; */
+    /* padding-bottom: 0; */
+    /* padding-left: 0;
+    margin-bottom: 0; */
+    float: right;
+    height: 60px;
+    margin-top: -42px;
+    margin-bottom: 0;
+    /* overflow-y: hidden; */
+    /* justify-content: right; */
+     /* width: 50px;  */
+}
+
+#apps li{
+    list-style: none;
+}
+
+#apps i{
+    filter: invert(1);
+    /* height: 40px;  */
+    margin: 10px;
+}  
+
+#apps i:hover{
+    cursor: pointer;
+}
+
+.fa-brands{
+    font-size: 25px;
+    /* float: right; */
+}

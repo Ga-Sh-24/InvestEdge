@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestEdge | Buy and Sell Stocks Online</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0f4075b95b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@2.0.0/intersection-observer.min.js"></script>
+
+    <script src="./script.js"></script>  
+</head>
+<body>
+        <nav id="navbar" class="bg-dark border-bottom border-bottom-dark">
+            <ul id="first">
+                <li><img src="./images/logo.png" alt="investedge.com"></li>
+                <li id="sitename">InvestEdge</li>
+              </ul>
+              
+            <ul id="second">
+              <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+              <li><a href="/about" target="_blank">About</a></li>
+              
+              <div class="dropdown1">
+                <li id="drop">Services</li>
+                <div class="content1">
+                  <a href="#">Real Trading</a>
+                  <a href="#">Options Trading</a>
+                  <a href="#">Virtual Trading</a>
+                </div>
+              </div>
+              <li><a href="/contact" target="_blank">Contact Us</a></li>
+              <li class="mod" data-bs-toggle="modal" data-bs-target="#exampleModal" style=":hover{color: rgb(2, 186, 250);}">Login</li>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Login</button>
+                          </div>
+                          <p class="login">Not A User? <a>Create New Account</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+        </nav>
+
+        <div id="carouselExamplesSlidesOnly" class="carousel slide w-80 m-auto carousel-fade carousel-transition-duration-0.1s" style="z-index: -1;" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/6.webp" class="d-block w-100" height="500px" width="500px" alt="...">
+              <div class="carousel-caption d-none d-md-block p-2">
+                <h5 style="font-size: 35px; font-family: 'Kaushan Script', cursive;">Seize Opportunities, Maximize Profits</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/9.jpg" class="d-block w-100" height="500px" width="500px" alt="...">
+              <div class="carousel-caption d-none d-md-block p-2">
+                <h5 style="font-size: 35px; font-family: 'Kaushan Script', cursive;">Trade Smarter, Trade Better</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/13.webp" class="d-block w-100" height="500px" width="500px" alt="...">
+              <div class="carousel-caption d-none d-md-block p-2">
+                <h5 style="font-size: 35px; font-family: 'Kaushan Script', cursive;">Trade with Confidence, Navigate the Markets</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/8.jpg" class="d-block w-100" height="500px" width="500px" alt="...">
+              <div class="carousel-caption d-none d-md-block p-2">
+                <h5 style="font-size: 35px; font-family: 'Kaushan Script', cursive;">Unlock Your Trading Potential, Embrace Financial Freedom</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/7.jpg" class="d-block w-100" height="500px" width="500px" alt="...">
+              <div class="carousel-caption d-none d-md-block p-2">
+                <h5 style="font-size: 35px; font-family: 'Kaushan Script', cursive;">Efficient Trading Solutions for a Competitive Edge</h5>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+       
+        
+        <h1 class="heading">Our Prospects...</h1>
+      <section id="secondPart">
+        <div class="cardPart">
+          <div class="cards">
+            <img src="./images/2.jpeg" alt="">
+            <div class="intro">
+              <h3>Real-Time Trading</h3>
+              <p>Stay in sync with the market's heartbeat through Real-Time Trading.</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="./images/14.jpg" alt="">
+            <div class="intro">
+              <h3>Instant Trade Execution</h3>
+              <p>Achieve instant results with our lightning-quick trade execution.</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="./images/15.jpg" alt="">
+            <div class="intro">
+              <h3 id="diff2">Time-Saving Convenience</h3>
+              <p>Optimize your busy schedule with our time-saving features, making trading hassle-free.</p>
+            </div>
+          </div>
+        
+          <div class="cards">
+            <img src="./images/16.jpeg" alt="">
+            <div class="intro">
+              <h3>Seamless Integration</h3>
+              <p>Say goodbye to disjointed processes and embrace the harmony of seamless integration.</p>
+            </div>  
+          </div>
+  
+            <div class="cards">
+              <img src="./images/1.jpeg" alt="">
+              <div class="intro">
+                <h3 id="diff">Customized Trading Strategies</h3>
+                <p>Tailor your trading experience to suit your preferences with custom strategies.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+     
+    <section id="thirdPart">
+      <p>Welcome to <span>InvestEdge</span>, your gateway to the exciting world of the stock market. We are committed to empowering traders and investors like you with the tools and resources needed to navigate the ever-changing landscape of finance. you can effortlessly navigate between trading, account management, and market insights, all in one place. Whether you're a seasoned trader or a beginner taking your first steps, our platform provides the tools, resources, and convenience to elevate your trading experience. Join us today and unlock your full potential in the thrilling world of stocks and investments.</p>
+    </section>
+
+    <section id="fourthPart">
+      <h1 class="heading">Our Sponsors...</h1>
+      <div class="spon">
+        <img src="./images/zero2.png" alt="">
+        <img src="./images/up2.png" alt="">
+        <img src="./images/grow2.png" alt="">
+        <img id="angel" src="./images/angel2.png" alt="">
+        <img src="./images/pay2.png" alt="">
+      </div>
+    </section>
+
+    
+     <section id="fifthPart" class="bg-dark">
+      <p style="font-family: 'Prompt', sans-serif;"><i class="fa-regular fa-copyright"></i> 2023 InvestEdge.com | All Rights Reserved</p>
+      <ul id="apps">
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-github"></i></li>
+      </ul>
+     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</body>
+</html>

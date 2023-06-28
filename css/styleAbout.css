@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bree+Serif&family=Caveat+Brush&family=Kanit:ital,wght@1,200&family=Kaushan+Script&family=Prompt:wght@300&family=Raleway:wght@500&family=Roboto+Mono:wght@200&family=Seymour+One&family=Ubuntu:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#firstPart{
+    width: 100%;
+    /* height: 100vh; */
+    overflow-x: hidden;
+}
+
+#navbar{
+    display: grid;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+#first{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#first li, #second li{
+    list-style: none;
+    margin: 5px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+#first img{
+    height: 50px;
+    width: 30px;
+    filter: invert(1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#first #sitename{
+    margin-left: -2px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#second{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-top: -77px;
+}
+
+#second li{
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+#second li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+#second .mod:hover, i:hover{
+    
+    
+    cursor: pointer;
+} 
+
+#second li:hover{
+    border-bottom: 3px solid rgb(2, 186, 250);
+}
+
+#drop:hover{
+    
+    cursor: pointer;
+}
+
+
+#second .dropdown1{
+    display: inline-block;
+}
+
+.content1{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    margin-left: 20px;
+    width: 175px;
+    border: 2px solid white;
+}
+
+.content1 a{
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    font-size: 17px;
+}
+
+.dropdown1:hover .content1{
+    display: block;
+}
+
+.content1 a:hover{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-weight: bold;
+}
+
+.login{
+    text-align: right; 
+    padding-right: 10px;
+}
+
+.login a:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about{
+    /* border: 10px outset rgb(255, 140, 0); */
+    border-radius: 60px;
+    font-family: 'Kaushan Script', cursive;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+    /* padding-bottom: 20px; */
+    width: 25%;
+    /* margin-top: 10px; */
+    margin-top: 10px;
+    margin-left: 10px;
+    background: rgb(24, 45, 179);
+    color: rgb(255, 248, 245);
+    box-shadow: 5px 5px 15px 2px rgb(178, 176, 176);
+    position: relative;
+}
+
+.para{
+    font-family: 'Prompt', sans-serif;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.5);
+    padding: 38px;
+    margin-top: -40px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    /* z-index: -1; */
+    /* position: absolute; */
+}
+
+
+.simple{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* .trans{
+    height: 300px; 
+    width: 68%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.cont{
+    /* border: 2px solid black; 
+    /* padding: 10px; 
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: center; 
+    /* justify-content: center; 
+    background-color: blanchedalmond;
+}
+
+.cont p{
+     background-color: rgb(74, 233, 233); 
+}
+
+
+.image{
+    height: 100%;
+    width: 100px;
+     object-fit: cover; 
+}
+
+.image img{
+    height: 100%;
+    width: 350px;
+} */
+
+.trans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* width: 110%; */
+    height: 300px;
+    margin: auto;
+    margin-left: -35px;
+    /* padding-right: 10px; */
+    transition: all 0.3s ease-in-out;
+    font-size: 17px;
+}
+
+.cont{
+    margin: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.image img{
+    height: 100%;
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+ .trans:hover .image img{
+     /* width: 370px; */
+    /* height: 300px;  */
+    transform: scale(1.1);
+}
+
+.trans:hover .cont{
+    margin: 30px;
+    font-size: 18px;
+    transform: scale(1.009);
+} 
+
+.trans:hover{
+    /* background-color: rgb(207, 209, 215); */
+    padding-right: 10px;
+}
+
+.heading{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    overflow: hidden;
+    margin: 50px 0;
+    margin-bottom: 30px;
+    background: rgb(24, 45, 179);
+    color: white;
+    padding: 15px;
+}
+
+.gash, .team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Prompt', sans-serif;
+    /* margin: auto; */
+}
+
+.gash{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+.gash h4{
+    padding-top: 10px;
+}
+
+.gash img{
+    /* margin: auto; */
+    border-radius: 50%;
+    height: 250px;
+    width: 230px;
+}
+
+.gash:hover{
+    transform: scale(1.1);
+    /* display: inline-block; */
+    /* width: 50%; */
+    /* margin: auto; */
+    /* overflow: hidden; */
+}
+
+
+.team{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team img{
+    border-radius: 50%;
+    height: 190px;
+    width: 180px;
+}
+
+.mem{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.mem p, h5{
+    text-align: center;
+}
+
+.mem h5{
+    padding-top: 10px;
+    /* padding-bottom: 0; */
+}
+
+.mem:hover{
+    transform: scale(1.1);
+}
+
+.tag{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+#fifthPart{
+    height: 60px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    padding: 0 15px;
+    padding-bottom: 0;
+    /* background-color: rgb(248, 239, 239); */
+    /* overflow-x: hidden; */
+}
+
+#fifthPart p{
+   padding: 18px;
+   padding-bottom: 0; 
+    color: white;
+    margin-bottom: 0;
+    /* float: left; */
+}
+
+#apps{
+   display: inline-flex;
+   flex-direction: row;
+   align-items: center;
+    /* padding-right: 18px; */
+    /* padding-bottom: 0; */
+    /* padding-left: 0;
+    margin-bottom: 0; */
+    float: right;
+    height: 60px;
+    margin-top: -42px;
+    margin-bottom: 0;
+    /* overflow-y: hidden; */
+    /* justify-content: right; */
+     /* width: 50px;  */
+}
+
+#apps li{
+    list-style: none;
+}
+
+#apps i{
+    filter: invert(1);
+    /* height: 40px;  */
+    margin: 10px;
+}  
+
+#apps i:hover{
+    cursor: pointer;
+}
+
+.fa-brands{
+    font-size: 25px;
+    /* float: right; */
+}
+
+.more{
+    /* text-align: center; */
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    margin: 20px 0;
+}
+
+.more a{
+    text-decoration: none;
+    font-size: 25px;
+}

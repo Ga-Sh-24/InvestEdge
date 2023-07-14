@@ -38,15 +38,35 @@ const querySchema = new mongoose.Schema({
 
 const userQuery= mongoose.model('userQuery', querySchema);
 
+var final=false;
+// function showModal(value, document){
+//     // let document="/contact";
+//     let submit=document.getElementById("hid");
+//     let message=document.getElementById("message");
+//     if(value==true){
+//         message.innerText="Your concern has been submitted successfully!";
+//     }else{
+//         message.innerText="Some error occurred in submitting your concern...";
+//     }
+//     submit.style.display="block";
+// }
 app.post('/contact', (req, res)=>{
     var newData=new userQuery(req.body);
     newData.save().then(()=>{
-       res.send("Your query has been submitted successfully!");
+    //    final=true;
+    //    showModal(final, document);
+    // res.render(alert("submitted!"));
+    // res.send("Saved")
+    res.sendFile(path.join(__dirname, 'message.html'));
     }).catch(()=>{
-        res.send("Error in form submission");
+        // final=false;
+        // showModal(final, document);
+        // res.render(alert("failed"));
+        // res.send("Failed")
+        res.sendFile(path.join(__dirname, 'message2.html'));
     })
-
 });
+
 
 
 

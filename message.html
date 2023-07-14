@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | InvestEdge.com</title>
+    <script src="https://kit.fontawesome.com/0f4075b95b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleMessage.css">
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@2.0.0/intersection-observer.min.js"></script>
+</head>
+<body>
+  <div class="blurred">
+    <nav id="navbar" class="bg-dark border-bottom border-bottom-dark">
+      <ul id="first">
+          <li><img src="./images/logo.png" alt="investedge.com"></li>
+          <li id="sitename">InvestEdge</li>
+        </ul>
+        
+      <ul id="second">
+        <li><a href="/" target="_blank"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="/about" target="_blank">About</a></li>
+        
+        <div class="dropdown1">
+          <li id="drop">Services</li>
+          <div class="content1">
+            <a href="#">Real Trading</a>
+            <a href="#">Options Trading</a>
+            <a href="#">Virtual Trading</a>
+          </div>
+        </div>
+        <li><a href="/contact">Contact Us</a></li>
+        <li class="mod" data-bs-toggle="modal" data-bs-target="#exampleModal" style=":hover{color: rgb(2, 186, 250);}">Login</li>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <label for="inputPassword5" class="form-label">Password</label>
+                      <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                    <p class="login">Not A User? <a>Create New Account</a></p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+  
+            
+  </nav>
+  
+      
+  
+        <div class="query">
+          <div class="inner">
+            <div id="ques">Have A Question?</div>
+            <form action="/contact" method="post">
+              <div class="mb-3 special">
+                
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+              </div>
+              <div class="mb-3 special">
+                
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email Id">
+              </div>
+              <div class="mb-3 special">
+                
+                <input type="text" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Contact Number">
+              </div>
+              <div class="mb-3 special">
+                
+                <textarea class="form-control" name="concern" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Concern" style="width: 800px;  border: 2px solid rgba(0, 0, 0, 0.4);"></textarea>
+              </div>
+              <button type="submit" class="btn1 btn btn-light" style="border: 2px solid black; font-weight: bold;">Submit</button>
+          </div>
+            </form>
+    
+          <div id="image">
+            <img src="./images/con11.png" width="375px" height="375px">
+          </div>
+        </div>
+    
+        <div class="details">
+          <div style="font-size: 2rem; margin-left: 20px; padding-bottom: 5px;">
+            Contact Details:
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i>investedge@yahoo.com</li>
+            <li><i class="fa-solid fa-phone"></i>+1 555-141-8990, +91 9924670015 (India)</li>
+            <li>Head Office At: 456 Maple Street, Toronto, ON M5V 2R7, Canada</li>
+          </ul>
+        </div>
+    
+        <section id="fifthPart" class="bg-dark">
+          <p style="font-family: 'Prompt', sans-serif;"><i class="fa-regular fa-copyright"></i> 2023 InvestEdge.com | All Rights Reserved</p>
+          <ul id="apps">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+         </section>
+  </div>
+
+       <div class="modal modal1" tabindex="-1" style="display: block;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Query Submission</h5>
+            </div>
+            <div class="modal-body">
+              <p id="message" style="margin-bottom: 0;">Your query has been submitted successfully!<i class="fa-solid fa-check" style="padding-left: 5px;"></i></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary redir">Okay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="scriptMessage.js"></script>
+
+</body>
+</html>

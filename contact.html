@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/styleContact.css">
     <script src="./scriptCon.js"></script>
     <script src="./script.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@2.0.0/intersection-observer.min.js"></script>
+    <script src="./app.js"></script>
 </head>
 <body>
     <nav id="navbar" class="bg-dark border-bottom border-bottom-dark">
@@ -56,6 +56,22 @@
                   </div>
                 </div>
               </ul>
+
+              <div class="modal" tabindex="-1" style="display: none;" id="hid">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Query Submission</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p id="message"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Okay</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </nav>
 
     <div class="query">
